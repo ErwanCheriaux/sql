@@ -1,6 +1,6 @@
 # SHOW
 
-SHOW tables;
+## SHOW tables;
 
 | Tables_in_elevage |
 | ----------------- |
@@ -10,7 +10,7 @@ SHOW tables;
 
 # DESCRIBE
 
-DESCRIBE Animal;
+## DESCRIBE Animal;
 
 | Field          | Type                 | Null | Key | Default | Extra          |
 |----------------|----------------------|------|-----|---------|----------------|
@@ -24,7 +24,7 @@ DESCRIBE Animal;
 | mere_id        | smallint(5) unsigned | YES  | MUL | NULL    |                |
 | pere_id        | smallint(5) unsigned | YES  | MUL | NULL    |                |
 
-DESCRIBE Espece;
+## DESCRIBE Espece;
 
 | Field       | Type                 | Null | Key | Default | Extra          |
 |-------------|----------------------|------|-----|---------|----------------|
@@ -33,7 +33,7 @@ DESCRIBE Espece;
 | nom_latin   | varchar(40)          | NO   | UNI | NULL    |                |
 | description | text                 | YES  |     | NULL    |                |
 
-DESCRIBE Race;
+## DESCRIBE Race;
 
 | Field       | Type                 | Null | Key | Default | Extra          |
 |-------------|----------------------|------|-----|---------|----------------|
@@ -44,7 +44,7 @@ DESCRIBE Race;
 
 # Keys and Index
 
-SHOW keys FROM Animal;
+## SHOW keys FROM Animal;
 
 | Table  | Non_unique | Key_name              | Seq_in_index | Column_name |
 |--------|------------|-----------------------|--------------|-------------|
@@ -56,14 +56,14 @@ SHOW keys FROM Animal;
 | Animal |          1 | fk_mere_id            |            1 | mere_id     |
 | Animal |          1 | fk_pere_id            |            1 | pere_id     |
 
-SHOW keys FROM Espece;
+## SHOW keys FROM Espece;
 
 | Table  | Non_unique | Key_name  | Seq_in_index | Column_name |
 |--------|------------|-----------|--------------|-------------|
 | Espece |          0 | PRIMARY   |            1 | id          |
 | Espece |          0 | nom_latin |            1 | nom_latin   |
 
-SHOW keys FROM Race;
+## SHOW keys FROM Race;
 
 | Table | Non_unique | Key_name          | Seq_in_index | Column_name |
 |-------|------------|-------------------|--------------|-------------|
